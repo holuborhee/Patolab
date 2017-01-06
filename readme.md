@@ -1,3 +1,91 @@
+# Patolab
+
+
+Framework: Laravel
+Database: MYSQL
+
+Front end: Bootstrap CSS Framework, Jquery
+
+
+************PATOLAB - A Pathology Lab Reporting System******
+
+Welcoming to using our Lab Reporting System. This text file contains how you will go about installing the app. The menu are:
+
+1. Steps to create and initialize Database.
+2. Things to do on server to prepare the source code to build/run properly.
+3. Assumptions made and missing requirements that are not covered.
+4. Feedback for later improvements.
+
+
+*****************************************************************************************************************************************************************
+
+STEPS TO CREATE AND INITIALIZE DATABASE
+
+You will have the single script file named "patolab.sql" in the source folder. Running this will install the Database on the server.
+
+To set up the app for database connection, locate the file ".env" also in root folder of the project. and edit the connection settings
+
+Example
+
+DB_CONNECTION=mysql
+DB_HOST=SERVER IP
+DB_PORT=3306
+DB_DATABASE=patolab
+DB_USERNAME=YOUR USERNAME
+DB_PASSWORD=YOUR PASSWORD
+
+
+***************************************************************************************************************************
+
+
+
+
+STEPS TO PREPARE THE SOURCE CODE TO BUILD/RUN PROPERLY
+
+Copy the project folder to the root of your server and point to the url <servername>/<projectname> in your web browser
+
+This should take to the root of the project, then click on public
+
+With that you have the welcome page.
+
+To logIn as Patient Click on "LOG IN" at right hand corner
+
+while to login as Operator you navigate to url <servername>/patolab/public/operator
+
+NOTE: for PHP MAILER TO WORK YOU HAVE TO CONFIGURE WITH YOUR PERSONAL GMAIL ACCOUNT (ALREADY REMOVED MINE)
+
+Where to configure path:patolab\app\Http\Controller\ReportController.php
+
+
+**************************************************************************************************************************************************************************
+
+ASSUMPTIONS MADE AND MISSING REQUIREMENTS NOT COVERED.
+
+
+1. Apologize for not using the patients name for logIn, had some issue with the plugin i use for suggest and the time frame was going. So for Patient Log IN "Email and Passcode" is used. Which the email is unique.
+
+Email and Passsword is used for Login for both operator and patient
+
+Every test has a physician.
+
+
+********************************************************************************************************************************
+
+
+FEEDBACK FOR LATER IMPROVEMENTS.
+
+
+1. Add Search feature to the Application in order to locate content easily.
+
+2. Add New test during edit of Report.
+
+
+****************************************************************************************************************************
+
+
+
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
@@ -38,4 +126,6 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
-# Patolab
+
+
+
